@@ -7,13 +7,15 @@
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGLZCJYCC3"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVJHMC4NEP"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-HGLZCJYCC3');
+    gtag('config', 'G-PVJHMC4NEP');
   </script>
+  <!-- Contentsquare (dawniej Hotjar) -->
+  <script src="https://t.contentsquare.net/uxa/6dcad71790db0.js"></script>
 </head>
 <body>
 <header><div class="wrap nav">
@@ -27,11 +29,13 @@
 <form id="lead-form" class="card" style="max-width:520px">
   <label for="imie">Imię</label><input id="imie" name="imie" required>
   <label for="email">E-mail</label><input id="email" name="email" type="email" required>
+  <label for="telefon">Telefon</label><input id="telefon" name="telefon" type="tel" required placeholder="np. 600 100 200">
+  <label for="auto">Marka, model i rocznik samochodu</label><input id="auto" name="auto" required placeholder="np. BMW X5 E53 2004">
   <label for="usluga">Usługa</label>
   <select id="usluga" name="usluga"><option>Radio Android</option><option>Pakiet audio</option><option>Diagnostyka</option></select>
   <label for="wiad">Wiadomość</label><textarea id="wiad" name="wiad" rows="4"></textarea>
   <p><button class="btn" type="submit">Wyślij zapytanie</button></p>
-  <p style="color:var(--muted);font-size:.9rem">Formularz testowy – dane nigdzie nie są wysyłane. Wysłanie wywołuje zdarzenie <code>generate_lead</code>.</p>
+  <p style="color:var(--muted);font-size:.9rem">Formularz testowy – dane nigdzie nie są wysyłane. Prosimy nie wpisywać prawdziwych danych.</p>
 </form>
 
 </div></main>

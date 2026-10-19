@@ -13,6 +13,8 @@ var AB = (function () {
   if (typeof gtag === 'function') gtag('set', 'user_properties', { ab_variant: v });
   window._uxa = window._uxa || [];
   window._uxa.push(['setCustomVariable', 1, 'AB_CTA', v, 3]);
+  window.clarity = window.clarity || function(){(window.clarity.q=window.clarity.q||[]).push(arguments)};
+  window.clarity('set', 'ab_variant', v);
   return v;
 })();
 

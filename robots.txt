@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /ga-lab/szukaj.html
+Allow: /
+
+Sitemap: https://sirdriver13.github.io/ga-lab/sitemap.xml
